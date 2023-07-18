@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Aula 02 - NodeJS (Atividade)</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body class="grey lighten-2">
+    <nav class="grey darken-4">
+        <div class="nav-wrapper container">
+            <!-- Comunidade Coders Ceará -->
+            <a href="/" class="brand-logo">Coders Ceará</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="/eventos">Eventos</a></li>
+              <li><a href="#">Contatos</a></li>
+              <li><a href="#">Dúvidas</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container">
+        <h2>Adicionar evento</h2>
+
+        <form action="/criar" method="POST">
+            <label for="Title"><b>Título: </b></label>
+            <input type="text" name="Title" id="Title" required><br>
+
+            <label for="Des"><b>Descrição: </b></label>
+            <input type="text" name="Des" id="Des" required><br>
+
+            <label for="URL"><b>URL da Imagem: </b></label>
+            <input type="text" name="URL" id="URL" required><br>
+
+            <label for="Price"><b>Preço: </b></label>
+            <input type="number" name="Price" id="Price" required><br>
+
+            <button class="btn waves-effect waves-light" type="submit" name="action">Adicionar <!-- Botão de enviar -->
+                <i class="material-icons right"></i> <!-- Icone -->
+        </form>
+
+    </section>
+</body>
+</html>
